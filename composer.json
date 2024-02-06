@@ -19,6 +19,16 @@
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-project-message": "^10.2",
         "drupal/core-recommended": "^10.2",
+        "drupal/admin_toolbar": "^3.4",
+        "drupal/config_ignore": "^3.2",
+        "drupal/imageapi_optimize": "^4.0",
+        "drupal/imageapi_optimize_binaries": "^1.0@beta",
+        "drupal/media_responsive_thumbnail": "^1.5",
+        "drupal/media_responsive_thumbnail_url_formatter": "^2.0",
+        "drupal/media_thumbnail_url_formatter": "^3.0",
+        "drupal/paragraphs": "^1.17",
+        "drupal/paragraphs_previewer": "^1.8",
+        "drupal/superfish": "^1.7",
         "drush/drush": "^12.4"
     },
     "conflict": {

@@ -1,0 +1,13 @@
+name: Media Responsive Thumbnail URL Formatter
+type: module
+description: Provides a field formatter for media reference field
+package: Custom
+core_version_requirement: ^9.3 || ^10
+dependencies:
+  - media_responsive_thumbnail:media_responsive_thumbnail
+  - drupal:responsive_image
+
+# Information added by Drupal.org packaging script on 2023-07-27
+version: '2.0.0'
+project: 'media_responsive_thumbnail_url_formatter'
+datestamp: 1690440379

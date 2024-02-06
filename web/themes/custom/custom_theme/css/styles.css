@@ -4,3 +4,8 @@
 @tailwind utilities;
 
 /* Your custom styles go here */
+body {
+  p {
+    background-color: red;
+  }
+}

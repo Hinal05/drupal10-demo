@@ -1,6 +1,9 @@
-const tailwind = require('tailwindcss');
-const autoprefixer = require('autoprefixer');
-
+// postcss.config.js
 module.exports = {
-  plugins: [tailwind, autoprefixer],
-};
+  plugins: {
+    'postcss-import': {},
+    'tailwindcss/nesting': 'postcss-nesting',
+    tailwindcss: {},
+    autoprefixer: {},
+  }
+}

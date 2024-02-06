@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Helvetica, Arial, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -135,7 +135,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Menlo, Monaco, monospace;
   /* 1 */
   font-feature-settings: normal;
   /* 2 */
@@ -673,6 +673,22 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.font-custom {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.font-mono {
+  font-family: Menlo, Monaco, monospace;
+}
+
+.font-sans {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.font-serif {
+  font-family: Georgia, serif;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -726,10 +742,20 @@ video {
   color: rgb(180 83 9 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 /* Your custom styles go here */
 
-body {
-  p {
-    background-color: red;
+.parent {
+  color: black;
+  .child {
+    font-weight: bold;
+    color: blue;
   }
+}
+
+.custom-tailwind {
+  border-radius: 0.5rem;
 }

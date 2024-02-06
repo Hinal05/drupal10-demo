@@ -4,8 +4,15 @@
 @tailwind utilities;
 
 /* Your custom styles go here */
-body {
-  p {
-    background-color: red;
+.parent {
+  color: black;
+
+  .child {
+    font-weight: bold;
+    color: blue;
   }
+}
+
+.custom-tailwind {
+  @apply rounded-lg;
 }

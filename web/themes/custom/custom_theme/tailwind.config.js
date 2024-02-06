@@ -28,6 +28,12 @@ module.exports = {
       'color2': '#00ff89',
       'color3': '#007eff',
     },
+    fontFamily: {
+      'sans': ['Helvetica', 'Arial', 'sans-serif'],
+      'serif': ['Georgia', 'serif'],
+      'mono': ['Menlo', 'Monaco', 'monospace'],
+      'custom': ['Verdana, Geneva, Tahoma, sans-serif']
+    },
   },
   plugins: [],
 }

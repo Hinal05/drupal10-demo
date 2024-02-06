@@ -6,7 +6,7 @@
   {{ content.field_demo_content }}
 </article>
 
-<section class="container mx-auto">
+<section class="container mx-auto custom-tailwind bg-lime-300">
   <h1 class="text-9xl font-bold mb-9 text-amber-700">Tailwind demo</h1>
   <div class="grid gap-4 grid-cols-2 grid-rows-1">
     <div class="mb-5 bg-orange-50 p-5">
@@ -49,12 +49,39 @@
       </ul>
     </div>
   </div>
-  <button class="btn-primary !bg-primary !text-white !... p-3 rounded-full">Primary Button</button>
-  <button class="btn-secondary !bg-secondary !text-white !... p-3 rounded-full">Secondary Button</button>
-  <button class="btn-warning !bg-warning !text-white !... p-3 rounded-full">Warning Button</button>
-  <button class="btn-danger !bg-danger !text-white !... p-3 rounded-full">Danger Button</button>
-  <button class="bg-orange-50 !bg-orange hover:bg-blue-600 font-bold py-2 px-4 rounded">
-    Primary Button
-  </button>
-  <p class="line-clamp-1">Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Sed fringilla mauris sit amet nibh. Vivamus consectetuer hendrerit lacus. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Fusce vel dui. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Suspendisse non nisl sit amet velit hendrerit rutrum. Nullam vel sem. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi.</p>
+
+  <div class="grid gap-4 grid-cols-2 grid-rows-1">
+    <div class="mb-5 bg-orange-50 p-5">
+      <h3 class="text-3xl text-amber-600 font-bold text-align-left underline">Font family</h3>
+      <div class="font-sans">This text uses the sans-serif font family.</div>
+      <div class="font-serif">This text uses the serif font family.</div>
+      <div class="font-mono">This text uses the monospace font family.</div>
+      <div class="font-custom">This text uses the custom font family.</div>
+
+      <h3 class="text-3xl text-amber-600 font-bold text-align-left underline">Postcss Nested</h3>
+      <div class="parent">
+        This is example of <span class="child">postcss-nested.</span>
+      </div>
+    </div>
+    <div class="mb-5 bg-orange-50 p-5">
+      <h3 class="text-3xl text-amber-600 font-bold text-align-left underline">Line Clamp</h3>
+      <p class="line-clamp-1">Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Sed fringilla mauris sit amet nibh. Vivamus consectetuer hendrerit lacus. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Fusce vel dui. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Suspendisse non nisl sit amet velit hendrerit rutrum. Nullam vel sem. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi.</p>
+    </div>
+    <div class="mb-5 bg-orange-50 p-5">
+      <h3 class="text-3xl text-amber-600 font-bold text-align-left underline">Buttons</h3>
+      <button class="btn-primary !bg-primary !text-white !... p-3 rounded-full">Primary Button</button>
+      <button class="btn-secondary !bg-secondary !text-white !... p-3 rounded-full">Secondary Button</button>
+      <button class="btn-warning !bg-warning !text-white !... p-3 rounded-full">Warning Button</button>
+      <button class="btn-danger !bg-danger !text-white !... p-3 rounded-full">Danger Button</button>
+      <button class="bg-orange-50 !bg-orange hover:bg-blue-600 font-bold py-2 px-4 rounded">
+        Primary Button
+      </button>
+    </div>
+  </div>
+  {#
+color: plugins
+variants
+
+media query
+ #}
 </section>

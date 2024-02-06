@@ -1,0 +1,8 @@
+name: test Theme
+type: theme
+description: "Custom theme"
+core_version_requirement: ^10
+hidden: false
+base theme: stark
+libraries:
+  - custom_theme/global-styling

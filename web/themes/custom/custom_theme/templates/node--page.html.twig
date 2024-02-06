@@ -1,0 +1,59 @@
+{#
+  node--demo-page.html.twig
+  Theme override for a demo page node.
+#}
+<article{{ content_attributes.addCLass }}>
+  {{ content.field_demo_content }}
+</article>
+
+<section class="container mx-auto">
+  <h1 class="text-9xl font-bold mb-9 text-amber-700">Tailwind demo</h1>
+  <div class="grid gap-4 grid-cols-2 grid-rows-1">
+    <div class="mb-5 bg-orange-50 p-5">
+      <h2 class="text-2xl font-bold text-amber-600 mb-4">How to override tailwind classes</h2>
+      <p class="text-1xl">Update h1 to h6 font size</p>
+      <ul>
+        <li>
+          <h1 class="text-8xl">Heading h1</h1>
+        </li>
+        <li>
+          <h2 class="text-7xl">Heading h2</h2>
+        </li>
+        <li>
+          <h3 class="text-6xl">Heading h3</h3>
+        </li>
+        <li>
+          <h4 class="text-5xl">Heading h4</h4>
+        </li>
+        <li>
+          <h5 class="text-4xl">Heading h5</h5>
+        </li>
+        <li>
+          <h6 class="text-3xl">Heading h6</h6>
+        </li>
+      </ul>
+    </div>
+    <div class="mb-5 bg-orange-50 p-5">
+      <h2 class="text-2xl font-bold text-amber-600 mb-4">How to add new classes in Tailwind</h2>
+      <p class="text-1xl">Added new bg colors</p>
+      <ul class="custom-color-pallete ">
+        <li class="flex items-center">
+          Background color 1: <span class="bg-color1 w-5 h-5 inline-block ml-1"></span>
+        </li>
+        <li class="flex items-center">
+          Background color 2: <span class="bg-color2 w-5 h-5 inline-block ml-1"></span>
+        </li>
+        <li class="flex items-center">
+          Background color 3: <span class="bg-color3 w-5 h-5 inline-block ml-1"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <button class="btn-primary !bg-primary !text-white !... p-3 rounded-full">Primary Button</button>
+  <button class="btn-secondary !bg-secondary !text-white !... p-3 rounded-full">Secondary Button</button>
+  <button class="btn-warning !bg-warning !text-white !... p-3 rounded-full">Warning Button</button>
+  <button class="btn-danger !bg-danger !text-white !... p-3 rounded-full">Danger Button</button>
+  <button class="bg-orange-50 !bg-orange hover:bg-blue-600 font-bold py-2 px-4 rounded">
+    Primary Button
+  </button>
+</section>

@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * Implements hook_css_alter().
+ */
+function custom_theme_css_alter(&$css) {
+  // Remove the core CSS file.
+  // unset($css[drupal_get_path('module', 'system') . '/css/system.module.css']);
+}

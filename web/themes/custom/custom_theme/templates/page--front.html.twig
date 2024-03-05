@@ -1,0 +1,20 @@
+{# themes/custom_theme/templates/page--front.html.twig #}
+
+{%
+  set classes = [
+    'page',
+    'front',
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  {# Your other page content #}
+
+  {% include '@custom_theme/patterns/my_custom_pattern/my_custom_pattern.twig.html' with {
+    title: 'Hello World',
+    content: 'This is a sample content for the custom pattern.',
+    url: '#',
+    link: 'Link'
+  } %}
+
+</div>

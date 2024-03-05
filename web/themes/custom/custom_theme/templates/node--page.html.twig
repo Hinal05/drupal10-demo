@@ -6,82 +6,75 @@
   {{ content.field_demo_content }}
 </article>
 
-<section class="container mx-auto custom-tailwind bg-lime-300">
-  <h1 class="text-9xl font-bold mb-9 text-amber-700">Tailwind demo</h1>
-  <div class="grid gap-4 grid-cols-2 grid-rows-1">
-    <div class="mb-5 bg-orange-50 p-5">
-      <h2 class="text-2xl font-bold text-amber-600 mb-4">How to override tailwind classes</h2>
-      <p class="text-1xl">Update h1 to h6 font size</p>
-      <ul>
-        <li>
-          <h1 class="text-8xl">Heading h1</h1>
-        </li>
-        <li>
-          <h2 class="text-7xl">Heading h2</h2>
-        </li>
-        <li>
-          <h3 class="text-6xl">Heading h3</h3>
-        </li>
-        <li>
-          <h4 class="text-5xl">Heading h4</h4>
-        </li>
-        <li>
-          <h5 class="text-4xl">Heading h5</h5>
-        </li>
-        <li>
-          <h6 class="text-3xl">Heading h6</h6>
-        </li>
-      </ul>
-    </div>
-    <div class="mb-5 bg-orange-50 p-5">
-      <h2 class="text-2xl font-bold text-amber-600 mb-4">How to add new classes in Tailwind</h2>
-      <p class="text-1xl">Added new bg colors</p>
-      <ul class="custom-color-pallete ">
-        <li class="flex items-center">
-          Background color 1: <span class="bg-color1 w-5 h-5 inline-block ml-1"></span>
-        </li>
-        <li class="flex items-center">
-          Background color 2: <span class="bg-color2 w-5 h-5 inline-block ml-1"></span>
-        </li>
-        <li class="flex items-center">
-          Background color 3: <span class="bg-color3 w-5 h-5 inline-block ml-1"></span>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="grid gap-4 grid-cols-2 grid-rows-1">
-    <div class="mb-5 bg-orange-50 p-5">
-      <h3 class="text-3xl text-amber-600 font-bold text-align-left underline">Font family</h3>
-      <div class="font-sans">This text uses the sans-serif font family.</div>
-      <div class="font-serif">This text uses the serif font family.</div>
-      <div class="font-mono">This text uses the monospace font family.</div>
-      <div class="font-custom">This text uses the custom font family.</div>
-
-      <h3 class="text-3xl text-amber-600 font-bold text-align-left underline">Postcss Nested</h3>
-      <div class="parent">
-        This is example of <span class="child">postcss-nested.</span>
+<section class="custom-tailwind bg-gray-50 py-5 hover:bg-slate-50">
+  <div class="container mx-auto">
+    <h1 class="text-9xl font-bold mb-9 text-amber-700">Tailwind demo</h1>
+    <div class="grid gap-4 lg:grid-cols-2 lg:grid-rows-1 grid-cols-1 grid-rows-none">
+      <div class="mb-5 bg-gray-100 p-5 w-full">
+        <h2 class="text-2xl font-bold text-amber-600 mb-4">How to override tailwind classes</h2>
+        <p class="text-1xl">Update h1 to h6 font size</p>
+        <ul>
+          <li>
+            <h1 class="text-8xl">Heading h1</h1>
+          </li>
+          <li>
+            <h2 class="text-7xl">Heading h2</h2>
+          </li>
+          <li>
+            <h3 class="text-6xl">Heading h3</h3>
+          </li>
+          <li>
+            <h4 class="text-5xl">Heading h4</h4>
+          </li>
+          <li>
+            <h5 class="text-4xl">Heading h5</h5>
+          </li>
+          <li>
+            <h6 class="text-3xl">Heading h6</h6>
+          </li>
+        </ul>
+      </div>
+      <div class="mb-5 bg-gray-100 p-5">
+        <h2 class="text-2xl font-bold text-amber-600 mb-4">How to add new classes in Tailwind</h2>
+        <p class="text-1xl">Added new bg colors</p>
+        <ul class="custom-color-pallete ">
+          <li class="flex items-center">
+            Background color 1: <span class="bg-color1 w-5 h-5 inline-block ml-1"></span>
+          </li>
+          <li class="flex items-center">
+            Background color 2: <span class="bg-color2 w-5 h-5 inline-block ml-1"></span>
+          </li>
+          <li class="flex items-center">
+            Background color 3: <span class="bg-color3 w-5 h-5 inline-block ml-1"></span>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="mb-5 bg-orange-50 p-5">
-      <h3 class="text-3xl text-amber-600 font-bold text-align-left underline">Line Clamp</h3>
-      <p class="line-clamp-1">Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Sed fringilla mauris sit amet nibh. Vivamus consectetuer hendrerit lacus. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Fusce vel dui. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Suspendisse non nisl sit amet velit hendrerit rutrum. Nullam vel sem. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi.</p>
-    </div>
-    <div class="mb-5 bg-orange-50 p-5">
-      <h3 class="text-3xl text-amber-600 font-bold text-align-left underline">Buttons</h3>
-      <button class="btn-primary !bg-primary !text-white !... p-3 rounded-full">Primary Button</button>
-      <button class="btn-secondary !bg-secondary !text-white !... p-3 rounded-full">Secondary Button</button>
-      <button class="btn-warning !bg-warning !text-white !... p-3 rounded-full">Warning Button</button>
-      <button class="btn-danger !bg-danger !text-white !... p-3 rounded-full">Danger Button</button>
-      <button class="bg-orange-50 !bg-orange hover:bg-blue-600 font-bold py-2 px-4 rounded">
-        Primary Button
-      </button>
+
+    <div class="grid gap-4 lg:grid-cols-2 lg:grid-rows-1 grid-cols-1 grid-rows-none">
+      <div class="mb-5 bg-gray-100 p-5">
+        <h3 class="text-3xl text-amber-600 font-bold text-align-left underline">Font family</h3>
+        <div class="font-sans">This text uses the sans-serif font family.</div>
+        <div class="font-serif">This text uses the serif font family.</div>
+        <div class="font-mono">This text uses the monospace font family.</div>
+        <div class="font-custom">This text uses the custom font family.</div>
+
+        <h3 class="text-3xl text-amber-600 font-bold text-align-left underline">Postcss Nested</h3>
+        <div class="parent">
+          This is example of <span class="child">postcss-nested.</span>
+        </div>
+      </div>
+      <div class="mb-5 bg-gray-100 p-5">
+        <h3 class="text-3xl text-amber-600 font-bold text-align-left underline">Line Clamp</h3>
+        <p class="line-clamp-1">Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Sed fringilla mauris sit amet nibh. Vivamus consectetuer hendrerit lacus. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Fusce vel dui. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Suspendisse non nisl sit amet velit hendrerit rutrum. Nullam vel sem. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi.</p>
+      </div>
+      <div class="mb-5 bg-gray-100 p-5">
+        <h3 class="text-3xl text-amber-600 font-bold text-align-left underline">Buttons</h3>
+        <button class="btn-primary">Primary Button</button>
+        <button class="btn-secondary">Secondary Button</button>
+        <button class="btn-warning">Warning Button</button>
+        <button class="btn-danger">Danger Button</button>
+      </div>
     </div>
   </div>
-  {#
-color: plugins
-variants
-
-media query
- #}
 </section>
